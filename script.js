@@ -73,6 +73,13 @@ window.onscroll = function(){
 }
 
 
+// Turn off tilt on small screens
+const mediaQuery = window.matchMedia('(max-width: 700px)')
+
+if (mediaQuery.matches) {
+    document.querySelectorAll('.card').forEach(anchor => { anchor.removeAttribute("data-tilt") })
+} 
+
 
 
 
