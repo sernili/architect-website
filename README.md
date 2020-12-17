@@ -11,3 +11,4 @@ I have implemented the following functionality myself:
 - adjust the hamburger-color according to the background-color using mix-blend-mode
 - on small screens (smaller than 500px): hide hamburger except on the top of the page
 - hide the Scroll-Button when at the top of the page
+- add favicon
