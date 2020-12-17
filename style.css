@@ -168,8 +168,8 @@ html {
     cursor: pointer;
     transition: right .7s;
     mix-blend-mode: exclusion;
-
 }
+
 
 .change .hamburger-menu {
     right: 33rem;
@@ -713,7 +713,7 @@ grid-row: 5 / -1;
 }
 
 .field:focus ~ label {
-    transform: translateY(-3rem);
+    transform: translateY(-2rem);
     font-size: 1.2rem;
 }
 
@@ -959,6 +959,14 @@ grid-row: 5 / -1;
         font-size: 2rem;
     }
 
+    .contact {
+        height: 100%;
+    }
+
+    .contact-wrapper {
+        margin: 20px 0;
+    }
+
     .field {
         width: 35rem;
     }
@@ -977,6 +985,18 @@ grid-row: 5 / -1;
         font-size: 45%;
     }
 
+    .hamburger-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .hamburger-show {
+        mix-blend-mode: normal;
+        opacity: 1;
+        visibility: visible;
+        transition: 250ms ease-in-out;
+    }
+
     .sidebar {
         width: 100%;
         right: -100%;
@@ -987,19 +1007,11 @@ grid-row: 5 / -1;
     }
 
     .service {
-        width: 20rem;
+        width: 60%;
     }
 
     .about-us-img-wrapper {
         width: 60%;
-    }
-
-    .contact {
-        height: 100%;
-    }
-
-    .contact-wrapper {
-        margin: 20px 0;
     }
 
     .footer {

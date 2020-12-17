@@ -31,34 +31,41 @@ document.querySelectorAll('.menu-link').forEach(anchor => {
     });
 });
 
-// Color Change Hamburger in sections with white background
+// hide scroll button when on top + hide hamburger on small screens except for when on top 
 const mybutton = document.querySelector(".scroll-btn");
 mybutton.classList.add('hidden');
+
+const hamburgerMenu = document.querySelector(".hamburger-menu")
 
 let hidden = true;
 
 window.onscroll = function(){
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        if (mybutton.classList.contains('hidden')) {
+        // Verhalten, wenn nicht ganz oben
+        // >> scroll button zeigen, wenn noch nicht gezeigt
+        // >> hamburger verstecken, wenn noch nicht versteckt
+        if (mybutton.classList.contains('hidden') || hamburgerMenu.classList.contains('hamburger-show')) {
             mybutton.classList.remove('hidden');
+            hamburgerMenu.classList.remove('hamburger-show');
             console.log("REMOVE")
         } 
         
     } else {
-        
-
-        if (!mybutton.classList.contains('hidden')) {
+        // Verhalten, wenn oben
+        // >> scroll button verstecken, wenn noch nicht versteckt
+        // >> hamburger zeigen, wenn noch nicht gezeigt
+        if (!mybutton.classList.contains('hidden') || !hamburgerMenu.classList.contains('hamburger-show')) {
             mybutton.classList.add('hidden');
+            hamburgerMenu.classList.add('hamburger-show');
             console.log("ADD")
         } 
     }
 }
-        
-// document.addEventListener("scroll", () => {
-//     let start = document.querySelector("#about-us");
-//     let end = document.querySelector(".container");
-//     if(start.getBoundingClientRect().top == 0) {
-//       console.log('Here!');
-//     }
-// })
+
+// Hide Hamburger on small devices except for when at the top
+
+
+
+
+
 
