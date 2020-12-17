@@ -452,6 +452,7 @@ html {
 .service {
     width: 100%;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .service:nth-child(1) {
@@ -486,14 +487,14 @@ grid-row: 5 / -1;
 
 .service-header {
     display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .service-header i {
-    font-size: 4rem;
+    font-size: 2rem;
     color: #4b4b4b;
-    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 .service-header h3 {
@@ -507,7 +508,6 @@ grid-row: 5 / -1;
 .service-text {
     font-family: "Josefin Slab", serif;
     font-size: 1.6rem;
-    /* text-align: justify; */
 }
 
 .about-us-img-wrapper {
@@ -987,10 +987,22 @@ grid-row: 5 / -1;
     }
 
     .service {
-        width: 2rem;
+        width: 20rem;
+    }
+
+    .about-us-img-wrapper {
+        width: 60%;
+    }
+
+    .contact {
+        height: 100%;
+    }
+
+    .contact-wrapper {
+        margin: 20px 0;
     }
 
     .footer {
-        height: 18rem;
+        height: 20rem;
     }
 }
