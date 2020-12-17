@@ -72,8 +72,6 @@ window.onscroll = function(){
     }
 }
 
-// Hide Hamburger on small devices except for when at the top
-
 
 
 
